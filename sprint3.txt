@@ -12,6 +12,6 @@ func main() {
 	fmt.Println("vvedite:")
 	fmt.Scan(&done, &total)
 	result := CalculateProgress(done, total)
-	fmt.Printf("%.2f\n", result)
+	fmt.Printf("%f", result)
 
 }
