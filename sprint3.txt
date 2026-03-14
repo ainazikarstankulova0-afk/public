@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func CalculateProgress(done int, total int) float64 {
+	return float64(done) / float64(total)
+}
+
+func main() {
+	var done int
+	var total int
+	fmt.Println("vvedite:")
+	fmt.Scan(&done, &total)
+	result := CalculateProgress(done, total)
+	fmt.Printf("%.2f\n", result)
+
+}
